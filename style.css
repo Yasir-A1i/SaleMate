@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+:root{
+    --bodybg: #171821;
+    --bg: #21222D;
+
+}
+
+body{
+    background-color: var(--bodybg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.nav{
+    width: 15%;
+    height: 100%;
+    border-right: 2px solid var(--bg);
+}
+.logo{
+    color: #ebebeb;
+    width: 90%;
+    height: 60px;   
+    margin: auto;
+}
+.list{  
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.list div{
+    color: #87888c;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.list div div{
+    padding-left: 40px;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+}
+.list div div:hover{
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:#53535e;
+}
+.icon::before{
+    content: '';
+    z-index: 2;
+    position: absolute;
+    left: 5px;
+    width: 15%;
+    height: 70%;    
+    background: url("home_o.png");
+    background-size: cover; 
+}
+.icon::after{
+    opacity: 0;
+    content: '';
+    z-index: 2;
+    position: absolute;
+    left: 5px;
+    width: 15%;
+    height: 70%;    
+    background: url("icons8-home-96.png");
+    background-size: cover; 
+}
+.icon:hover::after{
+    opacity: 1;
+}
+.icon:hover::before{
+    opacity: 0;
+}
+.icon:active{
+    background-color: blue;
+}
