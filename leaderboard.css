@@ -1,0 +1,23 @@
+.ldactive{
+    color: black;
+    background-color: var(--primary);
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+.ldactive div{
+    color: black;
+}
+.ldactive:after{
+    opacity: 1;
+    content: '';
+    z-index: 2;
+    position: absolute;
+    left: 5px;
+    width: 15%;
+    height: 70%;    
+    background: url("icons8-leaderboard-96.png");
+    background-size: cover; 
+}
