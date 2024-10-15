@@ -69,12 +69,120 @@
                     <div>Logout</div>
                 </div>
         </div></a>
-        <div class="content"></div>
+       
+    </div>
 
+    <div class="content">
+        <div class="profilearea">
+            <div class="intro">
+                <img src="yasir.jpg" alt="user_profile_picture">
+                <div class="userdata">
+                    <div class="js-name name">Yasir Ali</div>
+                    <div class="js-email email">yasirali@gmail.com</div>
+                </div>
+
+            </div>
+                <div class="managingAccounts">
+                   <a href="log.html"><button class="removeProfile">Remove Account</button></a> 
+                    <button class="addProfile">Add Accounts</button>
+                </div>
+        </div>
+        <div class="personalInformation">Personal Information
+            <div class="personalFlex">
+            <div class="namearea area">
+                <h3>Your Name</h3><div class="innerarea">
+                <h2 class="js-name js-name-small">Yasir Ali</h2>
+                <input type="text" class="nameInput" placeholder="Change Your Name">
+                <button class="changeName"
+                onclick="
+                change('name');
+                "
+                >Change</button></div>
+            </div>
+            <div class="emailarea area">
+                <h3>Your Email</h3><div class="innerarea">
+                <h2 class="js-email">yasirali@gmail.com</h2>
+                <input type="email" class="emailInput" placeholder="Change Your Email">
+                <button class="changeEmail"
+                onclick="
+                change('email');
+                "
+                >Change</button></div>
+            </div>
+            <div class="countryarea area">
+                <h3>Your Country</h3><div class="innerarea">
+                <h2 class="js-country">Pakistan</h2>
+                <input type="text" class="countryInput" placeholder="Change Your Country">
+                <button class="changeCountry"
+                onclick="
+                change('country');
+                "
+                >Change</button></div>
+            </div>
+            <div class="businnesarea area">
+                <h3>Your Business Name</h3><div class="innerarea">
+                <h2 class="js-business">Why? Webs</h2>
+                <input type="text" class="businessInput" placeholder="Change Your Business">
+                <button class="changeBusiness"
+                onclick="
+                change('business');
+                "
+                >Change</button></div>
+            </div>
+            <div class="namearea area">
+                <h3>Your Phone Number</h3><div class="innerarea">
+                <h2 class="js-number">+923044265477</h2>
+                <input type="tel" class="numberInput" placeholder="Change Your Number">
+                <button class="changeNumber"
+                onclick="
+                change('number');
+                "
+                >Change</button></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="otherprofiles">Other Profiles
+        <div class="profiles profile1">
+            <div class="number">1.</div>
+            <img src="yasir.jpg" alt="users profile pic">
+            <div class="name">Yasir Ali</div>
+            <div class="lastactive1">Last Active: Now</div>
+            <div class="status1">Active</div>
+            <button class="loginBtn">Login</button>
+            <button class="removeBtn">Remove</button>
+        </div>
+        <div class="profiles profile2">
+            <div class="number">2.</div>
+            <img src="zohaib.png" alt="users profile pic">
+            <div class="name">Zohaib Yousaf</div>
+            <div class="lastactive1">Last Active: 2 Days Ago</div>
+            <div class="status1">Loged out</div>
+            <button class="loginBtn">Login</button>
+            <button class="removeBtn">Remove</button>
+        </div>
+        <div class="profiles profile3">
+            <div class="number">2.</div>
+            <img src="Ali-Haider.png" alt="users profile pic">
+            <div class="name">Ali Haider</div>
+            <div class="lastactive1">Last Active: 01 year Ago</div>
+            <div class="status1">Restricted</div>
+            <button class="loginBtn">Login</button>
+            <button class="removeBtn">Remove</button>
+        </div>
+        <div class="profile3"></div>
+        <div class="profile4"></div>
+    </div>
+    </div>
 
 
 
         <script src="script.js"></script>
+        <script src="profile.js"></script>
 </body>
 
 </html>
