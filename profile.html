@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaleMate-A Sale manager</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo"></div>
+        <div class="list">
+            <a href="index.html"><div class="icon  dashboard">
+                <div>Dashboard</div>
+            </div></a>
+            <a href="profile.html">
+                <div class="icon profile">
+                    <div>Profile</div>
+                </div>
+            </a>
+            <a href="leaderboard.html">
+                <div class="icon leader">
+                    <div>Leaderboard</div>
+                </div>
+            </a>
+            <a href="order.html">
+                <div class="icon order">
+                    <div>Orders</div>
+                </div>
+            </a>
+            <a href="product.html">
+                <div class="icon product">
+                    <div>Product</div>
+                </div>
+            </a>
+            <a href="sales.html">
+                <div class="icon sales">
+                    <div>Sales Report</div>
+                </div>
+            </a>
+            <a href="msg.html">
+                <div class="icon msg">
+                    <div>Messages</div>
+                </div>
+            </a>
+            <a href="setting.html">
+                <div class="icon setting">
+                    <div>Settings</div>
+                </div>
+            </a>
+            <a href="fav.html">
+                <div class="icon fav">
+                    <div>Favourites</div>
+                </div>
+            </a>
+            <a href="history.html">
+                <div class="icon history">
+                    <div>History</div>
+                </div>
+            </a>
+            <a href="log.html">
+                <div class="icon log">
+                    <div>Logout</div>
+                </div>
+        </div></a>
+       
+    </div>
+
+    <div class="content">
+        <div class="profilearea">
+            <div class="intro">
+                <img src="assets/images/yasir.jpg" alt="user_profile_picture">
+                <div class="userdata">
+                    <div class="js-name name">Yasir Ali</div>
+                    <div class="js-email email">yasirali@gmail.com</div>
+                </div>
+
+            </div>
+                <div class="managingAccounts">
+                   <a href="log.html"><button class="removeProfile">Remove Account</button></a> 
+                    <button class="addProfile">Add Accounts</button>
+                </div>
+        </div>
+        <div class="personalInformation">Personal Information
+            <div class="personalFlex">
+            <div class="namearea area">
+                <h3>Your Name</h3><div class="innerarea">
+                <h2 class="js-name js-name-small">Yasir Ali</h2>
+                <input type="text" class="nameInput" placeholder="Change Your Name">
+                <button class="changeName"
+                onclick="
+                change('name');
+                "
+                >Change</button>
+                <div class="wrong-name js-wrong-name">
+                    Please enter a name*
+                </div></div>
+            </div>
+            <div class="emailarea area">
+                <h3>Your Email</h3><div class="innerarea">
+                <h2 class="js-email">yasirali@gmail.com</h2>
+                <input type="email" class="emailInput" placeholder="Change Your Email">
+                <button class="changeEmail"
+                onclick="
+                change('email');
+                "
+                >Change</button>
+                    <div class="wrong-email js-wrong-email">
+                        Please enter an email*
+                    </div>
+                    <div class="incorrect-email js-incorrect-email">
+                        Please enter a valid email*
+                    </div>
+            </div>
+            </div>
+            <div class="countryarea area">
+                <h3>Your Country</h3><div class="innerarea">
+                <h2 class="js-country">Pakistan</h2>
+                <input type="text" class="countryInput" placeholder="Change Your Country">
+                <button class="changeCountry"
+                onclick="
+                change('country');
+                "
+                >Change</button></div>
+            </div>
+            <div class="businnesarea area">
+                <h3>Your Business Name</h3><div class="innerarea">
+                <h2 class="js-business">Why? Webs</h2>
+                <input type="text" class="businessInput" placeholder="Change Your Business">
+                <button class="changeBusiness"
+                onclick="
+                change('business');
+                "
+                >Change</button></div>
+            </div>
+            <div class="namearea area">
+                <h3>Your Phone Number</h3><div class="innerarea">
+                <h2 class="js-number">+923044265477</h2>
+                <input type="tel" class="numberInput" placeholder="Change Your Number">
+                <button class="changeNumber"
+                onclick="
+                change('number');
+                "
+                >Change</button></div>
+            </div>
+            <div class="area password">
+                <h3>Password</h3><div class="innerarea">
+                    <div class="password-section">
+                <h2 class="js-password">***********</h2>
+                <button class="js-view-password-btn"
+                onclick="change('passwordHidden')"
+                >View</button></div>
+                <input type="password" class="passwordInput" placeholder="Change Your Password">
+                <button class="changePassword"
+                onclick="
+                change('password');
+                "
+                >Change</button></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="otherprofiles">Other Profiles
+        <div class="profiles profile1">
+            <div class="number">1.</div>
+            <img src="assets/images/yasir.jpg" alt="users profile pic">
+            <div class="name">Yasir Ali</div>
+            <div class="lastactive1">Last Active: Now</div>
+            <div class="status1">Active</div>
+            <button class="loginBtn">Login</button>
+            <button class="removeBtn">Remove</button>
+        </div>
+        <div class="profiles profile2">
+            <div class="number">2.</div>
+            <img src="assets/images/zohaib.png" alt="users profile pic">
+            <div class="name">Zohaib Yousaf</div>
+            <div class="lastactive1">Last Active: 2 Days Ago</div>
+            <div class="status1">Loged out</div>
+            <button class="loginBtn">Login</button>
+            <button class="removeBtn">Remove</button>
+        </div>
+        <div class="profiles profile3">
+            <div class="number">2.</div>
+            <img src="assets/images/Ali-Haider.png" alt="users profile pic">
+            <div class="name">Ali Haider</div>
+            <div class="lastactive1">Last Active: 01 year Ago</div>
+            <div class="status1">Restricted</div>
+            <button class="loginBtn">Login</button>
+            <button class="removeBtn">Remove</button>
+        </div>
+        <div class="profile3"></div>
+        <div class="profile4"></div>
+    </div>
+    </div>
+
+
+
+        <script src="scripts/script.js"></script>
+        <script src="scripts/profile.js"></script>
+</body>
+
+</html>

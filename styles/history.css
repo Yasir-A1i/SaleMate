@@ -1,0 +1,23 @@
+.hactive{
+    color: black;
+    background-color: var(--primary);
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+.hactive div{
+    color: black;
+}
+.hactive:after{
+    opacity: 1;
+    content: '';
+    z-index: 2;
+    position: absolute;
+    left: 5px;
+    width: 15%;
+    height: 70%;    
+    background: url("../assets/icons/icons8-history-96.png");
+    background-size: cover; 
+}

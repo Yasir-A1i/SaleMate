@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaleMate-A Sale manager</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/leaderboard.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo"></div>
+        <div class="list">
+            <a href="index.html"><div class="icon  dashboard">
+                <div>Dashboard</div>
+            </div></a>
+            <a href="profile.html">
+                <div class="icon profile">
+                    <div>Profile</div>
+                </div>
+            </a>
+            <a href="leaderboard.html">
+                <div class="icon leader">
+                    <div>Leaderboard</div>
+                </div>
+            </a>
+            <a href="order.html">
+                <div class="icon order">
+                    <div>Orders</div>
+                </div>
+            </a>
+            <a href="product.html">
+                <div class="icon product">
+                    <div>Product</div>
+                </div>
+            </a>
+            <a href="sales.html">
+                <div class="icon sales">
+                    <div>Sales Report</div>
+                </div>
+            </a>
+            <a href="msg.html">
+                <div class="icon msg">
+                    <div>Messages</div>
+                </div>
+            </a>
+            <a href="setting.html">
+                <div class="icon setting">
+                    <div>Settings</div>
+                </div>
+            </a>
+            <a href="fav.html">
+                <div class="icon fav">
+                    <div>Favourites</div>
+                </div>
+            </a>
+            <a href="history.html">
+                <div class="icon history">
+                    <div>History</div>
+                </div>
+            </a>
+            <a href="log.html">
+                <div class="icon log">
+                    <div>Logout</div>
+                </div>
+        </div></a>
+        </div>
+        <div class="content">
+
+            <div class="tops">
+                <div class="top topSellings">
+                    <div class="topHeading">Top Sellings
+                        <select id="timeframe" name="timeframe">
+                            <option value="lifetime">Lifetime</option>
+                            <option value="this-year">This Year</option>
+                            <option value="this-month">This Month</option>
+                            <option value="this-week">This Week</option>
+                            <option value="today">Today</option>
+                    </select></div>
+                    <div class="topSubHeading">The data being shown is based on last 30 Days</div>
+
+                    <div class="grapharea">
+                        <div class="left">
+                            <span>500</span><span>400</span><span>300</span><span>200</span><span>100</span><span>0</span>
+                        </div>
+                        <div class="right">
+                            <div class="graph">
+                                <img src="assets/images/sellings graph.svg" alt="Sellings graph">
+                            </div>
+                            <div class="dataDown">
+                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top topRevneu">
+                    <div class="topHeading">Top Revnue
+                        <select id="timeframe" name="timeframe">
+                            <option value="lifetime">Lifetime</option>
+                            <option value="this-year">This Year</option>
+                            <option value="this-month">This Month</option>
+                            <option value="this-week">This Week</option>
+                            <option value="today">Today</option>
+                    </select>
+                    </div>
+                    <div class="topSubHeading">The data being shown is based on last 30 Days</div>
+                    <div class="grapharea">
+                        <div class="left">
+                            <span>500</span><span>400</span><span>300</span><span>200</span><span>100</span><span>0</span>
+                        </div>
+                        <div class="right">
+                            <div class="graph">
+                                <img src="assets/images/revnue graph.svg" alt="Sellings graph">
+                            </div>
+                            <div class="dataDown">
+                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top topTraffic">
+                    <div class="topHeading">Top Traffic-Per-Day
+                        <select id="timeframe" name="timeframe">
+                            <option value="lifetime">Lifetime</option>
+                            <option value="this-year">This Year</option>
+                            <option value="this-month">This Month</option>
+                            <option value="this-week">This Week</option>
+                            <option value="today">Today</option>
+                    </select>
+                    </div>
+                    <div class="topSubHeading">The data being shown is based on last 30 Days</div>
+                    <div class="grapharea">
+                        <div class="left">
+                            <span>500</span><span>400</span><span>300</span><span>200</span><span>100</span><span>0</span>
+                        </div>
+                        <div class="right">
+                            <div class="graph">
+                                <img src="assets/images/traffic graph.svg" alt="Sellings graph">
+                            </div>
+                            <div class="dataDown">
+                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topProducts">  
+                <div class="topProductsList">
+                    <div class="topHeading">Top Products</div>
+                </div>
+                <div class="toproducts">
+                    <div class="image"></div>
+                    <div class="text"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="scripts/script.js"></script>
+</body>
+
+</html>

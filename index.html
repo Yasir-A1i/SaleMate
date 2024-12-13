@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaleMate-A Sale manager</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo"></div>
+        <div class="list">
+            <a href="index.html">
+                <div class="icon  dashboard">
+                    <div>Dashboard</div>
+                </div>
+            </a>
+            <a href="profile.html">
+                <div class="icon profile">
+                    <div>Profile</div>
+                </div>
+            </a>
+            <a href="leaderboard.html">
+                <div class="icon leader">
+                    <div>Leaderboard</div>
+                </div>
+            </a>
+            <a href="order.html">
+                <div class="icon order">
+                    <div>Orders</div>
+                </div>
+            </a>
+            <a href="product.html">
+                <div class="icon product">
+                    <div>Product</div>
+                </div>
+            </a>
+            <a href="sales.html">
+                <div class="icon sales">
+                    <div>Sales Report</div>
+                </div>
+            </a>
+            <a href="msg.html">
+                <div class="icon msg">
+                    <div>Messages</div>
+                </div>
+            </a>
+            <a href="setting.html">
+                <div class="icon setting">
+                    <div>Settings</div>
+                </div>
+            </a>
+            <a href="fav.html">
+                <div class="icon fav">
+                    <div>Favourites</div>
+                </div>
+            </a>
+            <a href="history.html">
+                <div class="icon history">
+                    <div>History</div>
+                </div>
+            </a>
+            <a href="log.html">
+                <div class="icon log">
+                    <div>Logout</div>
+                </div>
+        </div></a>
+    </div>
+
+
+
+
+    <div class="content">
+        <div class="firstportion">
+            <img src="../assets/icons/searchicon.svg" id="searchicon" alt="search icon">
+            <input placeholder="Search here..." type="text" name="Search here" id="search" class="search"> 
+            <div class="profileicon">
+               <a href="msg.html"><img src="../assets/icons/bell.svg" id="notification_bell_icon" alt="Notifications"></a>
+                <a href="profile.html"><img src="../assets/images/yasir.jpg" id="user_profile_pic" alt="user_profile_pic"></a>  
+                <a href="profile.html"> <img src="../assets/icons/more.png" alt="more_options">  </a>  
+            </div>
+        </div>
+        
+        <div id="secondportion">
+            <div id="todaysales">
+                <h2 class="heading">Taday's Sales</h2>
+                <p class="para">Sales Summary</p>
+                <div id="salesdata">
+                    <a href="sales.html"><div class="saledata">
+                        <img src="../assets/icons/saleicon1.svg" alt="total_Sale_icon">
+                        <h3 class="quantity">$5k</h3>
+                        <p class="coloredtext1">+10% from yesterday</p>
+                    </div></a>
+                    <a href="sales.html"> <div class="saledata">
+                        <img src="../assets/icons/saleicon2.svg" alt="total_order_icon">
+                        <h3 class="quantity">500</h3>
+                        <p class="coloredtext2">+8% from yesterday</p>
+                    </div></a>
+                    <a href="sales.html"><div class="saledata">
+                        <img src="../assets/icons/saleicon3.svg" alt="product-sold_icon">
+                        <h3 class="quantity">9</h3>
+                        <p class="coloredtext3">+2% from yesterday</p>
+                    </div></a>
+                    <a href="sales.html"><div class="saledata">
+                        <img src="../assets/icons/saleicon4.svg" alt="new_cunstomer_icon">
+                        <h3 class="quantity">12</h3>
+                        <p class="coloredtext4">+3% from yesterday</p>
+                    </div></a>
+                </div>
+            </div>
+            <div id="level">
+                <h2 class="heading">Level</h2>
+                <div class="linegraph">
+                    <div class="line" id="line1"></div>
+                    <div class="line" id="line2"></div>
+                    <div class="line" id="line3"></div>
+                    <div class="line" id="line4"></div>
+                    <div class="line" id="line5"></div>
+                    <div class="line" id="line6"></div>
+                </div>
+                <div id="volume_service">
+                    <div id="volume">Volume</div>
+                    <div id="service">Service</div>
+                </div>
+            </div>
+        </div>
+       <div id="thirdportion">
+       <div id="topproducts">
+                <h2 class="heading">Top Products</h2>
+                <div id="tablerowheading">
+                  
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Popularity</th>
+                            <th class="salestag">Sales</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="product.html">Home Decore Range</a></td>
+                            <td id="topproductline1" class="topproductline "><div></div></td>
+                            <td id="topproductbox1"><div></div>80%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="product.html">Disney Princess Dress</a></td>
+                            <td id="topproductline2" class="topproductline"> <div></div></td>
+                            <td id="topproductbox2"><div></div>60%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="product.html">Bartroom Essentials</a></td>
+                            <td id="topproductline3" class="topproductline"><div></div></td>
+                            <td id="topproductbox3"><div></div>45%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="product.html">Apple SmartWatches</a></td>
+                            <td id="topproductline4" class="topproductline"><div></div></td>
+                            <td id="topproductbox4"><div></div>75%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="customerfullfilment">
+                <h3 class="heading customerfullfilment">Customer Fullfilment</h3>
+                <div class="container">
+                    <img src="../assets/icons/Graph1.svg" alt="">
+                </div>
+                <div class="lower">
+                    <div class="lastmonth">Last Month</div>
+                    <div class="thismonth">This Month</div>
+                </div>
+            </div>
+        </div>
+        <div id="forthportion">
+            <div id="earning">
+                <h3>Earnings</h3>
+                <p>Totla Expenses</p>
+                <h2>$6078.6</h2>
+                <p>Profit is 48% More than last Month</p>
+                <img src="../assets/icons/Percentage meter.svg" alt="">
+            </div>
+            <div id="visitorinsight">
+                <div class="ungraph">
+                    <h3>Visitor Insights</h3>
+                    <p>New Insights</p>
+                </div>
+                <div class="graph">
+                    <img src="../assets/icons/LastGraph.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="scripts/script.js"></script>
+</body>
+
+</html>
